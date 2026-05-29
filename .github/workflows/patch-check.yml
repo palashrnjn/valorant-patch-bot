@@ -22,3 +22,7 @@ jobs:
       - run: python check_patch.py
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - run: python check_apex_patch.py
+        env:
+          APEX_WEBHOOK: ${{ secrets.APEX_WEBHOOK }}
